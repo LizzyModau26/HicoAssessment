@@ -1,0 +1,140 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2583761800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "editEmployeeDetailsStep.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1746800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "addEmployeeStep.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 4540100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "removeEmployeeStep.setup()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "",
+        "description": "",
+        "id": "edit-employee-details-functionality;;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 654509700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "editEmployeeDetailsStep.TearDown()"
+            }
+          },
+          {
+            "result": {
+              "duration": 933000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "addEmployeeStep.TearDown()"
+            }
+          },
+          {
+            "result": {
+              "duration": 54200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "removeEmployeeStep.TearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3151349200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User opens the main website page",
+            "match": {
+              "location": "editEmployeeDetailsStep.User_opens_the_main_website_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 15707471700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User selects a employee and enters firstname \"Mary-Ann\" and surname \"Jones\" and employeeNumber \"1220\" and salary \"20000\" and saves.",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Mary-Ann",
+                  "offset": 46
+                },
+                {
+                  "val": "Jones",
+                  "offset": 69
+                },
+                {
+                  "val": "1220",
+                  "offset": 96
+                },
+                {
+                  "val": "20000",
+                  "offset": 114
+                }
+              ],
+              "location": "editEmployeeDetailsStep.userEntersEmployeeDetailsAndClicksSave(String,String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@editEmployeeDetails"
+          }
+        ]
+      }
+    ],
+    "name": "Edit Employee Details functionality",
+    "description": "",
+    "id": "edit-employee-details-functionality",
+    "keyword": "Feature",
+    "uri": "src/test/java/features/editEmployeeDetails.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@editEmployeeDetails"
+      }
+    ]
+  }
+]
